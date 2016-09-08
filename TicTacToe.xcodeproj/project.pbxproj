@@ -13,6 +13,7 @@
 		7C17A0FA1AF6A99E00480A6E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C17A0F91AF6A99E00480A6E /* Images.xcassets */; };
 		7C17A0FD1AF6A99E00480A6E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C17A0FB1AF6A99E00480A6E /* LaunchScreen.xib */; };
 		7C17A1091AF6A99E00480A6E /* TicTacToeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C17A1081AF6A99E00480A6E /* TicTacToeTests.swift */; };
+		7C17A1411AF6F8BF00480A6E /* TicTacToe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C17A1401AF6F8BF00480A6E /* TicTacToe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		7C17A1021AF6A99E00480A6E /* TicTacToeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicTacToeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C17A1071AF6A99E00480A6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C17A1081AF6A99E00480A6E /* TicTacToeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeTests.swift; sourceTree = "<group>"; };
+		7C17A1401AF6F8BF00480A6E /* TicTacToe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicTacToe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				7C17A0F21AF6A99E00480A6E /* AppDelegate.swift */,
 				7C17A0F41AF6A99E00480A6E /* ViewController.swift */,
 				7C17A0F61AF6A99E00480A6E /* Main.storyboard */,
+				7C17A1401AF6F8BF00480A6E /* TicTacToe.swift */,
 				7C17A0F91AF6A99E00480A6E /* Images.xcassets */,
 				7C17A0FB1AF6A99E00480A6E /* LaunchScreen.xib */,
 				7C17A0F01AF6A99E00480A6E /* Supporting Files */,
@@ -156,7 +159,9 @@
 		7C17A0E51AF6A99E00480A6E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastSwiftMigration = 0710;
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Ketul Patel";
 				TargetAttributes = {
 					7C17A0EC1AF6A99E00480A6E = {
@@ -213,6 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C17A0F51AF6A99E00480A6E /* ViewController.swift in Sources */,
+				7C17A1411AF6F8BF00480A6E /* TicTacToe.swift in Sources */,
 				7C17A0F31AF6A99E00480A6E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +282,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -344,6 +351,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TicTacToe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Ketul-Patel.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -354,6 +362,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TicTacToe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Ketul-Patel.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -372,6 +381,7 @@
 				);
 				INFOPLIST_FILE = TicTacToeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Ketul-Patel.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TicTacToe.app/TicTacToe";
 			};
@@ -387,6 +397,7 @@
 				);
 				INFOPLIST_FILE = TicTacToeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Ketul-Patel.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TicTacToe.app/TicTacToe";
 			};
@@ -411,6 +422,7 @@
 				7C17A10E1AF6A99E00480A6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7C17A10F1AF6A99E00480A6E /* Build configuration list for PBXNativeTarget "TicTacToeTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +431,7 @@
 				7C17A1111AF6A99E00480A6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
